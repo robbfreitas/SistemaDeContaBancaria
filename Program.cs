@@ -20,6 +20,7 @@ namespace SistemaDeContaBancaria
             {
                 Console.Write("Informe um valor para depósito: ");
                 double depositoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                // O Objeto será instanciando aproveitando o depositoInicial + o Saldo
                 conta = new ContaBancaria(numero, titular, depositoInicial);
             }
             else

@@ -24,6 +24,7 @@ namespace SistemaDeContaBancaria
 
         public ContaBancaria(int numero, string titular, double depositoInicial) : this(numero, titular)
         {
+            // Mesma coisa de saldo += depositoInicial (substituindo o parâmetro "quantia"
             Deposito(depositoInicial);
         }
 
